@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DLTabedSlideView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<DLTabedSlideViewDelegate>
 
+
+@property (weak, nonatomic) IBOutlet DLTabedSlideView *tabedSlideView;
 
 @end
 
